@@ -54,8 +54,6 @@ class SeatAllocation:
         n = np.floor(p * self.num / s) #按比例分配的席位
         if self.num - np.sum(n) == 0.:
             return list(n)
-        
-        import heapq
         m = int(self.num - np.sum(n)) #剩下的席位
         r = list(p * self.num / s - n) # 小数点后的结果
         l = []
@@ -87,7 +85,6 @@ class SeatAllocation:
             return 
         if method == 'EP':
             return self.Q_Value_Method()
-        import heapq
         m = len(self.person)
         if self.num < m:
             print("席位过少，该方法不适用")
