@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Aug 29 12:12:10 2020
-
-@author: linziqian
 reference: 姜启源《数学建模》
 """
 
